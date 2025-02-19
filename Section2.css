@@ -1,0 +1,125 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #fff;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.construction-tag {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    line-height: 1.2;
+    color: #222;
+    max-width: 350px;
+}
+
+.details-section {
+    max-width: 350px;
+}
+
+.detail-item {
+    border-bottom: 1px solid #ddd;
+    padding: 25px 0;
+}
+
+.detail-item h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #222;
+}
+
+.detail-item p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.toggle-btn {
+    font-size: 20px;
+    color: #666;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.images-section {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.chair-image {
+    height: 700px;
+    object-fit: contain;
+    border-radius: 0;
+}
+
+.chair-image.main {
+    flex: 3;
+}
+
+.chair-image.side {
+    flex: 1;
+        height: 500px; /* Giảm chiều cao của ảnh phụ */
+    align-self: flex-start; /* Căn ảnh lên trên */
+}
+
+.row {
+    display: flex;
+    gap: 80px;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 36px;
+        max-width: 100%;
+    }
+
+    .details-section {
+        max-width: 100%;
+    }
+
+    .images-section {
+        flex-direction: column;
+    }
+    
+    .chair-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .chair-image.main,
+    .chair-image.side {
+        flex: none;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
